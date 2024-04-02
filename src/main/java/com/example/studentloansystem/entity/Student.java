@@ -22,9 +22,9 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(name = "student", schema = "hw16")
+@Table(name = "student", schema = "loan_system")
 @Entity
-@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_student", schema = "hw16")
+@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_student", schema = "loan_system")
 public class Student extends BaseEntity<Long> implements Serializable {
 
     @Column(nullable = false)

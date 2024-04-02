@@ -18,9 +18,9 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(name = "spouse", schema = "hw16")
+@Table(name = "spouse", schema = "loan_system")
 @Entity
-@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_spouse", schema = "hw16")
+@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_spouse", schema = "loan_system")
 public class Spouse extends BaseEntity<Long> implements Serializable {
     @Column(nullable = false)
     @Pattern(regexp = "^[A-Za-z]+(?:\\s[A-Za-z]+)*$", message = "firstname must have been include just English alphabet")

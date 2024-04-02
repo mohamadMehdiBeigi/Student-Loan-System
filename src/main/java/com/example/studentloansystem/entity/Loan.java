@@ -17,8 +17,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(schema = "hw16")
-@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_loan", schema = "hw16")
+@Table(schema = "loan_system")
+@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_loan", schema = "loan_system")
 public class Loan extends BaseEntity<Long> implements Serializable {
 
     @Column(name = "number_of_loan_instalment")

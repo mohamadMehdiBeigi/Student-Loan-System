@@ -15,9 +15,9 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(name = "city", schema = "hw16")
+@Table(name = "city", schema = "loan_system")
 @Entity
-@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_student", schema = "hw16")
+@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_student", schema = "loan_system")
 public class City extends BaseEntity<Long> implements Serializable {
 
     @Column(name = "city_name", unique = true)

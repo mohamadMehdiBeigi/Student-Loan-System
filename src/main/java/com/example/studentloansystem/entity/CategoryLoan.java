@@ -20,9 +20,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 @ToString
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(name = "category_loan", schema = "hw16")
+@Table(name = "category_loan", schema = "loan_system")
 @Entity
-@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_categoryLoan", schema = "hw16")
+@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_categoryLoan", schema = "loan_system")
 public class CategoryLoan extends BaseEntity<Long> implements Serializable {
 
     @Column(name = "loan_price")

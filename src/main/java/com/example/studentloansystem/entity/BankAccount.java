@@ -19,8 +19,8 @@ import java.time.LocalDate;
 @Builder
 @ToString
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(schema = "hw16")
-@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_card_number", schema = "hw16")
+@Table(schema = "loan_system")
+@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_card_number", schema = "loan_system")
 public class BankAccount extends BaseEntity<Long> implements Serializable {
 
     @Enumerated(value = EnumType.STRING)

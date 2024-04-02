@@ -18,9 +18,9 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(schema = "hw16")
+@Table(schema = "loan_system")
 @Entity
-@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_installment", schema = "hw16")
+@SequenceGenerator(name = "ID_GENERATOR", allocationSize = 1, sequenceName = "seq_installment", schema = "loan_system")
 public class Installment extends BaseEntity<Long> implements Serializable {
 
     @Column(name = "amount_of_installment")
