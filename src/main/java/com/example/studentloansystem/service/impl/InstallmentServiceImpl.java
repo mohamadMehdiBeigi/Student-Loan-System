@@ -54,7 +54,6 @@ public class InstallmentServiceImpl implements InstallmentService {
         }
         Loan loan = loanService.findByCategoryLoanIdAndStudentId(categoryLoan.getId(), studentId);
 
-
         LocalDate yearOfEntrance = student.getYearOfEntrance();
         EducationLevel educationLevel = student.getEducationLevel();
 
@@ -62,7 +61,6 @@ public class InstallmentServiceImpl implements InstallmentService {
         double firstInstallment = afterProfitPercent / 372;
 
         LocalDate firstDateOfDeposit = null;
-
         if (educationLevel == EducationLevel.ASSOCIATE
                 || educationLevel == EducationLevel.DISCONTINUOUS_MASTER
                 || educationLevel == EducationLevel.CONTINUOUS_DOCTORATE

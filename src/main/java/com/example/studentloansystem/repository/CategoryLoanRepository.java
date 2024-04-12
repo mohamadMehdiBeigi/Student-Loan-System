@@ -17,5 +17,5 @@ public interface CategoryLoanRepository extends JpaRepository<CategoryLoan, Long
             join l.categoryLoan\s
             where l.student.id =:studentId
             """)
-    public List<CategoryLoan> findAllByStudentId(Long studentId);
+    List<CategoryLoan> findAllByStudentId(Long studentId);
 }

@@ -9,5 +9,5 @@ import java.time.LocalDate;
 public interface BankAccountService  {
 
 
-
+    boolean checkingBankAccount(BankAccount bankAccount);
 }
